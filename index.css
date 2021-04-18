@@ -1,0 +1,296 @@
+html, body {
+  font-family: 'Raleway', sans-serif;
+  padding: 3em 2em;
+  font-size: 18px;
+  background: rgb(34, 34, 34);
+  color: #aaa
+}
+
+h1, h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  color: #888;
+  font-size: 2em;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* basic stylings ------------------------------------------ */
+
+body {
+  background: url(https://scotch.io/wp-content/uploads/2014/07/61.jpg);
+}
+
+.container {
+  font-family: 'Roboto';
+  width: 600px;
+  margin: 30px auto 0;
+  display: block;
+  background: #FFF;
+  padding: 10px 50px 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 small {
+  font-weight: normal;
+  color: #888;
+  display: block;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: #53B2C8;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+}
+.wrapper{
+  background: #fff;
+  padding: 20px 30px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+.wrapper .text{
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper p{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.wrapper .btns{
+  display: flex;
+  margin: 30px 0 20px 0;
+}
+.btns a{
+  position: relative;
+  margin-left: -150%;
+  margin-bottom: 20px;
+  height: 60px;
+  width: 250px;
+  display: block;
+  line-height: 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+  box-shadow: 0  8px rgba(0, 0, 0, 0.4);
+}
+.btns a > span{
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ripples 0.6s linear infinite;
+}
+@keyframes ripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+/* form starting stylings ------------------------------- */
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input {
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 400px;
+  height: 60px;
+  margin-top: 10%;
+  background-color: transparent;
+  border: 2px solid #757575;
+}
+
+input:focus {
+  border: 2px solid #2483ff;
+  transition: .100s;
+  outline: none;
+}
+
+/* LABEL ======================================= */
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 20px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+
+input:focus~label, input:valid~label {
+  top: -8px;
+  z-index: 999999;
+  background-color: #222222;
+  font-size: 14px;
+  color: #2483ff;
+}
+
+/* BOTTOM BARS ================================= */
+
+
+
+
+
+/* active state */
+
+input:focus~.bar:before, input:focus~.bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+
+input:focus~.highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+#conect {
+  margin-top: 40%;
+}
+
+@keyframes ripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.7;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+#msg {
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 400px;
+  height: 240px;
+  margin-top: 10%;
+  background-color: transparent;
+  border: 2px solid #757575;
+  resize: none;
+}
+
+#msg:focus~label {
+  top: -8px;
+  background-color: #222222;
+  font-size: 14px;
+  color: #2483ff;
+}
+
+#msg:focus~.highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+#msg:focus {
+  border: 2px solid #2483ff;
+  transition: .100s;
+  outline: none;
+}

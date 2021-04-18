@@ -1,0 +1,146 @@
+html, body {
+         font-family: 'Raleway', sans-serif;
+         padding: 3em 2em;
+         font-size: 18px;
+         background: rgb(34, 34, 34);
+         color: #aaa
+}
+
+h1, h2 {
+         font-weight: 200;
+}
+
+h1 {
+         font-size: 3.5em;
+}
+
+h2 {
+         color: #888;
+         font-size: 2em;
+}
+
+body {
+         background: url(https://scotch.io/wp-content/uploads/2014/07/61.jpg);
+}
+
+.container {
+         font-family: 'Roboto';
+         width: 600px;
+         margin: 30px auto 0;
+         display: block;
+         background: #FFF;
+         padding: 10px 50px 50px;
+}
+
+h2 {
+         margin-bottom: 50px;
+}
+
+h2 small {
+         font-weight: normal;
+         color: #888;
+         display: block;
+}
+
+.footer a {
+         color: #53B2C8;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+         margin: 0;
+         padding: 0;
+         outline: none;
+         box-sizing: border-box;
+         font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+         display: grid;
+         height: 100%;
+         place-items: center;
+         text-align: center;
+}
+
+.wrapper {
+         background: #fff;
+         padding: 20px 30px;
+         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.wrapper .text {
+         font-size: 35px;
+         font-weight: 600;
+}
+
+.wrapper p {
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 20px;
+}
+
+.wrapper .btns {
+         display: flex;
+         margin: 30px 0 20px 0;
+}
+
+.btns a {
+         position: relative;
+         margin-left: -150%;
+         margin-bottom: 20px;
+         height: 60px;
+         width: 250px;
+         display: block;
+         line-height: 60px;
+         border-radius: 30px;
+         text-decoration: none;
+         color: #fff;
+         font-size: 18px;
+         font-weight: 500;
+         letter-spacing: 1px;
+         overflow: hidden;
+         box-shadow: 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.btns a:active {
+         box-shadow: none;
+         border: none;
+         background-color: rgb(48, 48, 48)
+}
+
+.btns a>span {
+         position: absolute;
+         background: #fff;
+         transform: translate(-50%, -50%);
+         border-radius: 50%;
+         pointer-events: none;
+         animation: ripples 0.6s linear infinite;
+}
+
+@keyframes ripples {
+         0% {
+                  width: 0px;
+                  height: 0px;
+                  opacity: 0.5;
+         }
+         100% {
+                  width: 500px;
+                  height: 500px;
+                  opacity: 0;
+         }
+}
+
+#contact_us {
+         margin-top: 20%;
+}
+
+#card {
+         background-color: rgb(185, 185, 185);
+         height: 200px;
+         margin-top: 50px;
+         color: white;
+         margin-left: 100px;
+         width: 300px;
+         backdrop-filter:  blur(10px);
+         border-radius: 10px;
+}
